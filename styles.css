@@ -1,0 +1,79 @@
+body {
+    position: relative;
+  }
+
+  .spider {
+    width: 230px;
+    height: 230px;
+    background: url('hw/ragno.png');
+    background-size: cover;
+    position: absolute;
+    animation: swing 5s ease-in-out infinite;
+    z-index: 9999;
+  }
+
+  #spider1 {
+    top: 50px; 
+    left: 50px; 
+  }
+
+  #spider2 {
+    top: 150px; 
+    right: 350px; 
+  }
+
+  #spider3 {
+    bottom: 150px; 
+    left: 100px; 
+  }
+
+  #spider4 {
+    bottom: 50px; 
+    right: 50px; 
+  }
+
+  .cord {
+    width: 2px;
+    height: 50px; 
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 9998; 
+  }
+
+  .cord.spider1 {
+    top: 0;
+    left: 165px; 
+  }
+
+  .cord.spider2 {
+    top: 0;
+    right: 465px; 
+  }
+
+  .cord.spider3 {
+    bottom: 0;
+    left: 365px; 
+  }
+
+  .cord.spider4 {
+    bottom: 0;
+    right: 65px; 
+  }
+
+  @keyframes swing {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(50px) rotate(5deg);
+    }
+    50% {
+      transform: translateY(0) rotate(0deg);
+    }
+    75% {
+      transform: translateY(50px) rotate(-5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }

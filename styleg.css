@@ -1,0 +1,32 @@
+.ghost-container {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  transform: translate(0, 0);
+}
+
+.ghost {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  animation: moveUp 4s, fadeOut 4s forwards;
+  z-index: 10000;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(100vh); 
+  }
+  100% {
+    transform: translateY(-100vh); 
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0; 
+  }
+}
