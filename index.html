@@ -25,8 +25,6 @@
   <link href='https://d33wubrfki0l68.cloudfront.net/css/517538d16a3ccdf8ccf450d4f979bfa776b10c14/assets/css/styles.css'
     rel='stylesheet' />
   <link href="https://enricozon.cranci.xyz" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="styleg.css">
   <link rel="icon" href="imagini/enricozon-logo(1).png">
 
   <script type="text/javascript"
@@ -40,10 +38,7 @@
   <div class="ghost-container">
   </div>
 
-  <div class="spider" id="spider1"></div>
-  <div class="spider" id="spider2"></div>
-  <div class="spider" id="spider3"></div>
-  <div class="spider" id="spider4"></div>
+ 
 
   <nav class="main-navbar">
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -768,35 +763,6 @@
     gtag('js', new Date());
     gtag('config', 'UA-154599393-1');
   </script>
-
-<script>
-
-  function createGhost() {
-    const ghostContainer = document.querySelector('.ghost-container');
-    const ghost = document.createElement('div');
-    ghost.classList.add('ghost');
-
-   
-    const randomImage = Math.random() < 0.5 ? 'hw/ghost2.png' : 'hw/ghost1.png';
-    ghost.style.background = `url(${randomImage})`;
-    ghost.style.backgroundSize = 'cover';
-
- 
-    const randomX = Math.random() * window.innerWidth; 
-    const randomY = Math.random() * window.innerHeight; 
-
-    ghost.style.left = `${randomX}px`;
-    ghost.style.top = `${randomY}px`;
-
-    ghostContainer.appendChild(ghost);
-  }
-
-  window.addEventListener('load', function() {
-    for (let i = 0; i < 8; i++) {
-      createGhost();
-    }
-  });
-</script>
-
+  
 </body>
 </html>
