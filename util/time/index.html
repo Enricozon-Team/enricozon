@@ -32,6 +32,11 @@
         button:hover {
             background-color: rgba(12, 63, 64, 1);
         }
+
+        #returnButton {
+            background-color: red;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +46,10 @@
         <button onclick="navigateTo('https://enricozon.ecgang.repl.co')">Open-Beta 2023</button>
         <button onclick="navigateTo('https://enricozon-team.github.io/enricozon-hw')">Halloween 2023</button>
 
+        <button id="returnButton" onclick="navigateTo('https://enricozon.cranci.xyz')">Torna all'era attuale</button>
+
     </div>
+
 
     <script>
         function navigateTo(url) {
