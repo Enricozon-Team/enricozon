@@ -15,16 +15,3 @@ html, body {
   object-fit: cover;
   z-index: -100;
 }
-.titolo{
-  position: absolute;
-  color:#FFFFFF;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  border:10px solid;
-  border-radius: 25px;
-  padding:20px;
-}
-h1 {
-  font-family: 'Open Sans', serif;
-  font-size:90px;
-}
