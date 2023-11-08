@@ -1,8 +1,7 @@
 body {
  color: white;
  background-color: black;
+ text-align: center;
+ top: 50%;
 }
 
-img {
-    align-items: center;
-}
