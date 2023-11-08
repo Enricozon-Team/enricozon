@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+  height:100%;
+  margin:0;
+}
+.contenitore{
+  height:100%
+}
+.videofullscreen{
+  position:absolute;
+  overflow: hidden;
+  width:100% !important;
+  height:100% !important;
+  object-fit: cover;
+  z-index: -100;
+}
