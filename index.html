@@ -798,5 +798,45 @@
     gtag('config', 'UA-154599393-1');
   </script>
   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio Online</title>
+</head>
+<body>
+
+<script>
+    var products = [
+        { name: "Mandarino Fresco Km 0", description: "Descrizione del Prodotto 1" },
+        { name: "Matteo Salvini", description: "Descrizione del Prodotto 2" },
+        { name: "Bloom  Winx", description: "Descrizione del Prodotto 3" },
+        // Aggiungi gli altri prodotti secondo le tue esigenze
+    ];
+
+    function search() {
+        var query = document.getElementById("search-input").value.toLowerCase();
+        var resultsContainer = document.getElementById("results");
+        resultsContainer.innerHTML = ""; // Pulisci i risultati precedenti
+
+        products.forEach(function (product) {
+            if (product.name.toLowerCase().includes(query)) {
+                var productElement = document.createElement("div");
+                productElement.classList.add("product");
+                productElement.innerHTML = "<h3>" + product.name + "</h3><p>" + product.description + "</p>";
+                resultsContainer.appendChild(productElement);
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
 </body>
 </html>
