@@ -52,7 +52,7 @@
   </div>
    
     <div class="nav-logo">
-      <a href="/">
+      <a href="https://enricozon-team.github.io/enricozon-hw/">
         <img src="imagini/enricozon.png" alt="Enricozon" height="48" />
       </a>
     </div>
@@ -64,7 +64,7 @@
         <form id="search-box">
           <input type="text" value="robe da rubare">
         </form>
-        <a href="/">
+        <a href="https://enricozon-team.github.io/enricozon-hw/">
           <span class="search-button-sprite"></span>
         </a>
       </div>
@@ -798,46 +798,6 @@
     gtag('config', 'UA-154599393-1');
   </script>
   
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-
-<input type="text" id="nav-search" placeholder="Cerca per nome..." oninput="search()">
-
-<script>
-    var products = [
-        { name: "Sigma"}        
-        { name: "Prodotto 2"}
-        { name: "Prodotto 3"}
-        // Aggiungi gli altri prodotti secondo le tue esigenze
-    ];
-
-    function search() {
-        var query = document.getElementById("search-input").value.toLowerCase();
-        var resultsContainer = document.getElementById("results");
-        resultsContainer.innerHTML = ""; // Pulisci i risultati precedenti
-
-        products.forEach(function (product) {
-            if (product.name.toLowerCase().includes(query)) {
-                var productElement = document.createElement("div");
-                productElement.classList.add("product");
-                productElement.innerHTML = "<h3>" + product.name + "</h3><p>" + product.description + "</p>";
-                resultsContainer.appendChild(productElement);
-            }
-        });
-    }
-</script>
-
-
-
-
-
-
-
 
 </body>
 </html>
