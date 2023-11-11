@@ -1,5 +1,9 @@
-# enricozon
-enricozon the best market in the world. simple site made for joke
+# Enricozon
+Enricozon, the best market in the world. A simple site made for joke.
+
+The items/photos in this website are used for entertainment purposes only. 
+
+If you don't want a photo or item of your propriety being displayed in this site, please contact us at [enricozon@cranci.xyz](mailto:enricozon@cranci.xyz)
 
 Made by:
 
