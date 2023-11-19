@@ -32,9 +32,48 @@
   
 
 
+    <style>
+      .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+      }
+      
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .closebtn:hover {
+        color: rgb(255, 255, 255);
+      }
+
+      .center {
+		  text-align: center;
+		  color: rgb(255, 255, 255);
+		}
+
+    .center2 {
+		  color: white;
+		}
+    </style>
 </head>
 
 <body>
+
+      
+  <div class="alert">
+    <h1 class="center">AVVISO IMPORTANTE</h1>
+    <p class="center">Clicca sulla "x" per chiudere il messaggio.</p>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <p class="center"><strong>ATTENTO!</strong> Sei in una versione di Enricozon ormai non piu attiva. Per tornare nell'attuale Enricozon clicca:<a class="center2" href="https://enricozon.mom"> QUI</a></p>
+  </div>
 
  
 
